@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Claudio Bessone">
+        <meta charset="UTF-8">
+        <title>CONTACTO</title>
+        <link rel="stylesheet" href="estilos.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body style = "background-color: darkgoldenrod;";>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Menú</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="Actividad BOOTSRAP.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="InfoPersonal.html">Información Personal <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Formulario de Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1 align="center"><u>FORMULARIO DE CONTACTO</u></h1>
+            <!-- Default form login -->
+            <form class="text-center border border-light p-5" action="#!">
+
+                <p class="h4 mb-4">COMPLETE LOS SIGUIENTES CAMPOS</p>
+                
+                <!--Nombre-->
+                <input type="text" id="nombre" class="form-control mb-4" placeholder="Nombre" required="">
+                <!--Apellido-->
+                <input type="text" id="apellido" class="form-control mb-4" placeholder="Apellido" required="">
+                <!-- Email -->
+                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" required="">
+
+                <!-- Mensaje -->
+                <input type="text" id="mensajeEnviar" class="form-control mb-4" placeholder="Escriba su mensaje aqui" required="">
+
+                <!-- Enviar in button -->
+                <button class="btn btn-info btn-block my-4" type="submit">Enviar Mensaje</button>
+
+                <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+            </form>
+        </main>
+    </body>
+</html>

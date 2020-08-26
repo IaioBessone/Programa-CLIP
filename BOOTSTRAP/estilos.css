@@ -1,0 +1,46 @@
+table {
+    width: 800px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    td {
+    border: 2px solid black;
+    }
+    th {
+    border: 2px solid black;
+    }
+    tfoot {
+    text-align: center;
+    font-style: oblique;
+    }
+    h1 {
+        color: saddlebrown;
+    }
+    img{
+        display:block;
+        margin:auto;
+    }
+    p{
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkred;
+    }
+    a{
+        text-align: center;
+    }
+    #enlaceImagen{
+        text-align: center;
+    }
+    #imgInicio{
+        display: block;
+    }
+    td a {
+        color: red;
+    }
+
+    .navbar-nav  > li{
+        margin-left:140px;
+        margin-right:140px;
+      }
+      
