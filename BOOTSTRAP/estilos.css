@@ -1,18 +1,17 @@
-table {
-    width: 800px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
+    table {
+        width: 800px;
+        border: 1px solid black;
+        border-collapse: collapse;
     }
     td {
-    border: 2px solid black;
+        border: 2px solid black;
     }
     th {
-    border: 2px solid black;
+        border: 2px solid black;
     }
     tfoot {
-    text-align: center;
-    font-style: oblique;
+        text-align: center;
+        font-style: oblique;
     }
     h1 {
         color: saddlebrown;
@@ -33,7 +32,8 @@ table {
         text-align: center;
     }
     #imgInicio{
-        display: block;
+        float: left;
+        margin:10px
     }
     td a {
         color: red;
@@ -42,5 +42,23 @@ table {
     .navbar-nav  > li{
         margin-left:140px;
         margin-right:140px;
+    }
+    
+    #infoInicio{
+        margin: 15px;
       }
-      
+    table tbody tr td ol {
+        
+    }
+
+    .tableInfo{
+        text-align: center;
+    }
+    .tableArmas{
+        text-align: left;
+    }
+
+    .buttonsMensaje > button{
+        margin: 10px;
+        padding: 10px;
+    }
