@@ -55,10 +55,73 @@
                 <a href="#nav" class="menu-trigger"><i class="fa fa-bars"></i></a>
             </div>
         </header>
+        <h1 align="center"><u>ADIVINANZA SOBRE EL TEMA DEL SITIO...</u></h1>
         <main>
             <br>
-            <h1 align="center"><u>ADIVINANZA SOBRE EL JUEGO...</u></h1>
-            
+            <div class="adivinanza">
+                <h3>Las BERETTAS DOBLES. ¿Qué tipo de armas es?</h3>
+                <br>
+                <!--Respuesta-->
+                <input type="text" id="respuestas" onclick="javascript: limpiar(this);" class="form-control mb-4" placeholder="Respuesta" style="width: 150px;">
+                <br>
+                <br>
+                <label id="cantidadIntentos">4 intentos disponibles</label>
+                <br>
+                <br>
+                <!--Enviar in button-->
+                <button class="btn btn-primary" id="ButtonResponder" type="submit" style="width: 200px; height: 50px;" onclick="Verificar()">Responder</button>
+            </div>
         </main>
+        <script>
+            function Verificar(){
+                cantidadIntento = document.getElementById("cantidadIntentos").innerHTML;
+                respuesta = document.getElementById("respuestas").value;
+                if(document.getElementById("respuestas").value == "pistola")
+                {
+                    alert("respuesta correcta");
+                    actualizar();
+                }
+                else
+                {
+                    if(document.getElementById("cantidadIntentos").innerHTML == "4 intentos disponibles")
+                    {
+                        document.getElementById("cantidadIntentos").innerHTML = "3 intentos disponibles";
+                        alert("Respuesta incorrecta"); 
+                    }
+                    else{
+                        if(document.getElementById("cantidadIntentos").innerHTML == "3 intentos disponibles")
+                        {
+                            document.getElementById("cantidadIntentos").innerHTML = "2 intentos disponibles - Pista 1: Son 2 armas en 1";
+                            alert("Respuesta incorrecta"); 
+                        }
+                        else{
+                            if(document.getElementById("cantidadIntentos").innerHTML == "2 intentos disponibles - Pista 1: Son 2 armas en 1")
+                            {
+                                document.getElementById("cantidadIntentos").innerHTML = "1 intento disponible - Pista 2: La primera letra es la P";
+                                alert("Respuesta incorrecta"); 
+                            } 
+                            else{
+                                if(document.getElementById("cantidadIntentos").innerHTML == "1 intento disponible - Pista 2: La primera letra es la P")
+                                {
+                                    document.getElementById("cantidadIntentos").innerHTML = "No le quedan mas intentos";
+                                    alert("Respuesta incorrecta");
+                                    alert("HAS PERDIDO!!!");
+                                    alert("Respuesta correcta: PISTOLA");
+                                    actualizar(); 
+                                } 
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            function limpiar(elemento){
+                elemento.value = "";
+            }
+            function actualizar()
+            {
+                location.reload(true);
+            }
+        </script>
     </body>
 </html>

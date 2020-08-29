@@ -17,6 +17,11 @@ blockquote, q {
   quotes: none;
 }
 
+.adivinanza{
+  text-align: center;
+}
+
+
 blockquote:before, blockquote:after, q:before, q:after {
   content: none;
 }
