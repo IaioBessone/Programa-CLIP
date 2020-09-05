@@ -167,9 +167,30 @@ input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 
+.nombre{
+  width: 500px;
+}
+
+.apellido{
+  width: 500px;
+}
+
+.email{
+  width: 500px;
+}
+
 button {
   width: auto;
   overflow: visible;
+  text-align: center;
+}
+
+.buttonsMensaje{
+  text-align: center;
+}
+
+.formularioContacto{
+  margin-left: 30px;
 }
 
 .ie7 img {

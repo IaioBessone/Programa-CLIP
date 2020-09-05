@@ -15,7 +15,7 @@
     </head>
     <body style="background-color: honeydew;">
         <header class="header">
-
+            <!--Barra de navegación-->
             <div class="header-wrap">
 
                 <div class="logo plain logo-left">
@@ -60,24 +60,39 @@
         <br>
         <main>
             <h1 align="center"><u>FORMULARIO DE CONTACTO</u></h1>
-            <!-- Default form login -->
-            <form class="text-center border border-light p-5" action="#!">
-                <p class="h4 mb-4">COMPLETE LOS SIGUIENTES CAMPOS</p>
+            <!-- Formulario de contacto -->
+            <form class="formularioContacto" action="#!">
+                <p class="h4 mb-4"><u>COMPLETE LOS SIGUIENTES CAMPOS</u></p>
                 
                 <!--Nombre-->
-                <input type="text" id="nombre" class="form-control mb-4" placeholder="Nombre" required="">
+                <div class="nombre">
+                    <label for="nombre"> <strong>NOMBRE</strong></label>
+                    <br>
+                    <input type="text" id="nombre" class="form-control mb-4" placeholder="Nombre">
+                </div>
+                <br>
                 <!--Apellido-->
-                <input type="text" id="apellido" class="form-control mb-4" placeholder="Apellido" required="">
+                <div class="apellido">
+                    <label for="apellido"><strong>APELLIDO</strong></label>
+                    <br>
+                    <input type="text" id="apellido" class="form-control mb-4" placeholder="Apellido">
+                </div>
+                <br>
                 <!-- Email -->
-                <input type="email" class="form-control mb-4" placeholder="Email"id="email">
-
+                <div class="email">
+                    <label for="email"><strong>EMAIL</strong></label>
+                    <br>
+                    <input type="email" class="form-control mb-4" placeholder="Email"id="email">
+                </div>
+                <br>
                 <!-- Mensaje -->
-                <input type="text" id="mensajeEnviar" class="form-control mb-4" placeholder="Escriba su mensaje aqui" required="">
-                
+                <div class="mensaje">
+                    <label for="mensajeEnviar"><strong>MENSAJE</strong></label>
+                    <br>
+                    <textarea  type="text" class="form-control" id="mensajeEnviar" placeholder="Escriba su mensaje aquí"></textarea>
+                </div>
+                <br>
                 <div class="buttonsMensaje">
-                    <!-- Cancelar in button -->
-                    <button class="btn btn-danger" type="" style="width: 200px; height: 50px;" >Cancelar</button>
-
                     <!-- Enviar in button -->
                     <button class="btn btn-success" type="submit" style="width: 200px; height: 50px;">Enviar Mensaje</button>
                 </div>
