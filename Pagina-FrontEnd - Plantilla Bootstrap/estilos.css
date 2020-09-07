@@ -185,6 +185,11 @@ button {
   text-align: center;
 }
 
+.asideAcercaDeMi{
+  float: right;
+  margin-right: 200px;
+}
+
 .buttonsMensaje{
   text-align: center;
 }
